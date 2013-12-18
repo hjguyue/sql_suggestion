@@ -1,7 +1,0 @@
-package sqlsugg.template;
-
-public class TIndEdge {
-	public String toString () {
-		return "TIndEdge";
-	}
-}
