@@ -1,0 +1,1793 @@
+jiannan bo
+database search
+count jian
+data vldb 2000 2010
+Wang query
+xml guoliang 20
+selec
+accur
+data search w
+guoliang ju
+databcc
+aut
+count papeweiyi
+spee
+guozha
+kristian kersting coun
+schema extraction divesh cikm 2010
+divesh paper group by booktitl
+data ming w
+big eyes cloth bl
+coundatabase icde surajit
+lizhu zhou
+icde sura
+set c
+divesh paper group by bookti
+moon h
+database search e
+chen
+kristian kersting counting belief propagation
+icde guolia
+count jiannan wanyear
+database 2
+malleable
+count pameng
+ju fa
+met
+michael care
+database icde surajit 2000 20
+max year wu hao
+number paper wu hao
+k
+michae
+schema extracti
+count database icde
+count database icde sura
+count paperweiyi
+paper trie aut
+canc
+guoliang l2010
+count paper sigmod
+database sigmo
+beng chin sigmod
+kristian kersting counting
+h.v.
+cancer research aw
+michael carey cid
+zhou x
+database guol
+database cidr sur
+divesh paper group
+keyword search guoliang li co
+database icde surajit 2000 2010
+me
+xml guoliang 2009 data sea
+keyword search sig
+select title from paper where paper.title co
+ma
+cou2000 2010
+mo
+mi
+count paper vld
+count ji
+search ci
+set cover
+wang
+nahid shahme
+select title from paper where paper
+count databa author
+Li
+database icde surajit 2006 2010
+count guoliang
+nahid sha
+carey sigmod c
+2010 200
+select title from pa
+hop
+icde datab sigmod
+count database auto
+Inducing an Order on Cellular Automata by a GroupOperation
+carey sigmod
+paper jiannan wang yea
+guoliang li ea
+Qian zhon
+database.t
+guozhang
+tsing
+count person organiz
+count avera paper
+count paper jianyon
+data ming wang
+ouzzan
+mi sigmod count
+count database icde surajit
+database icde ulma
+Li xml
+guoliang ju fa
+database search en
+seaform auth
+ju fannnnnn
+icde surajit
+acco
+count ave paper
+Lxml
+data 2000 2
+accounting in be
+database cidr suraj
+coudatabase surajit icde
+icde guoliang li
+michael careyu
+number of papers vldb 2010
+count divesh p
+count dbl
+icde da sigmod
+select title from paper
+wenf
+domain au
+searc
+guoliang li search key
+countdivesh paper booktitle
+hopcrof
+count paper jianyong w
+search cidr 2
+coundatabase surajit icde
+elsevier cou
+guoliang li search ke
+count databa
+goo
+cdatabase surajit icde
+guoliang li ease
+ra
+ro
+database icde michael fran
+cancer research
+299
+database icde jimmy g
+kristian ker
+domain auth
+jennif
+schema extraction divesh cikm 2
+W
+search cidr c
+elsevier co
+xml autho
+xml guoliang 2009 data searc
+select title from paper where paper.title conta
+big eyes cloth blue age 30 ch
+count jiannan wangyear
+count database autho
+Inducing an Order on Cellular Automata by a Group Operation 2
+count icde suraji
+select title from p
+icde  sigmod
+database icde surajit 2000
+he
+database icde surajit 2009
+count jiannan year 20
+data vldb wang 2
+xio
+database lizhu
+keywo
+database icde ul
+database cidr
+count database icde sur
+nahi
+ming zhan
+keyword
+count paper author dat
+count xmguoliang
+guoliang li keyw
+zhou xml sigm
+guoliang li jianhua
+chen li
+rag
+database icde surajit 2000 2
+data vldb wa2000 2010
+ming
+select title from paper where paper.title con
+guoliang keyw
+count paper ji
+database icde michael car
+database icde suraj
+database icde surai
+count guolia
+mariu
+schema extraction dive
+max year guoli
+database vldb ouzzani
+Qi
+database lizh
+Wang
+paper guoliang
+dom
+m
+datab
+keyword s
+seaform au
+search engine
+michael carey cidr count
+count dat
+select title from paper where paper.title contains "
+select title from
+cancer resea
+seaform author
+guoliang zh
+count guoliang 2010
+count divesh pa
+data vldb w2000 2010
+count jiannan wang
+moon hyu
+tsinghua gu
+coudivesh paper booktitle
+database cidr sucount
+do
+di
+codatabase icde surajit
+dd
+da
+guoliang li sigmod
+nahid shahmehri co
+paper jianyong wang tastier
+big eyes cloth
+michael carey
+num paper jianyong wang
+michael carey si
+data v
+data ming wang vl
+data s
+num
+data i
+data g
+icde guoliang
+cancer thera
+databas
+Relational Databases for Querying XML Documents: Limitations and Opportunities
+guoliang li sigmod c
+database sura
+h.v. ja
+ju fannnn
+we
+count papemeng
+data 2
+wh
+nahid shah
+count icde
+cdatabase icde surajit
+jiannan boo
+nahid shahmeh
+cou
+select title from paper where paper.title contains "query"
+keyword search guol
+michael carey sigmod
+count jiannan
+keywor
+panagiotis
+malleabl
+numbe paper jianyong wang
+database sear
+count zh
+count paper author
+cancer researc
+Wang quer
+guoliang li search keyword
+count dives
+data vld
+Qian Xhon
+tsinghua g
+Li X
+h.v. jaga
+divesh paper group by book
+num pape
+jiannanwa
+database 199
+data 2000 20
+guoliang li eas
+n
+database surajit i
+xml guoliang 2009 data
+ju fannn
+hopcroft soci
+database sur
+paper jianyong wang c
+paper jianyong wang g
+count jiannan year
+ic
+paper jianyong wang t
+kristian kersting counting beli
+nu paper jianyong wang
+ouzzao
+tsinghua guolia
+nahid sh
+raghu
+count paweiyi
+ming zh
+nahid
+select title from paper where paper.
+schem
+guoliang li sigmod co
+database cidr s
+beng chin ooi
+guoliang li search
+data guo
+sql sug
+beng chin o
+database icde jim gr
+guoliang 20
+count db
+count da
+2010 2000
+count di
+max ye
+kristian kersting
+data se
+count xml guoliang
+max year
+icde guoliang l
+hopcroft so
+domain aut
+count person organiza
+keysea
+cancer therapy cure
+els
+count database icde au
+select p
+select t
+kristian kersting counting belief propag
+guozh
+database icde sura
+database icde michael fr
+paper jinannan
+count pa author
+hopcroft s
+Inducing an Order on Cellular Automata by a Group Operation 200
+count guoliangl
+schema extractio
+200
+count ic surajit
+jennifer
+count person univ
+database cidr scount
+big eyes cloth blue ag
+count data
+big eyes cloth blue age 30 c
+sura
+icd
+wang data vldb
+paper wu h
+Ha
+keyword search ci
+data vldb wang2000 2010
+guoliang zhou
+ming Li
+count men
+dat guoliang
+jiannan wang bo
+big eyes cloth blu
+keyword search guo
+michael carey sigmod cou
+divesh pa
+count meng
+count dblp
+Li XML
+numb paper jianyong wang
+data search we
+µØ·½
+max y
+database icde kian-
+whate
+jiannan wang boo
+jenn
+keyword search guoliang li count
+Wang qu
+wan
+data min
+database icde michael frankl
+data search weiy
+count paper guolian
+paper jianyong wang closet
+count divesh paper bo
+database icde michael care
+guoliang li keyword
+xml guolian
+guoliang li search keywo
+number of paper vldb 2010
+numbe paper vldb 2010
+paper jianyong wang ta
+count person universit
+paper jiannan wa
+database icde michael franklin
+count jiannan y
+search engin
+diod
+icde databas sigmod
+paper ji
+cancer research paper
+accounting
+panag
+jiannan
+count gu
+na
+paper jianyong wang tasti
+search cidr 2007
+cancer research pape
+chen l
+database icde wa
+nu
+search cidr 20
+ju fannnnn
+count pjiannan wang
+2006 2010 data vl
+big eye
+count icde sura
+sql
+big eys
+number m
+kristian kersting counting belief pr
+count paper a
+count paper v
+count paper w
+number p
+data sear
+count paper s
+database.title.
+rob
+database icde kian le
+xml guoliang 2009 da
+set co
+guoliang li jia
+tsinghuaq
+mallea
+beng c sigmod
+keyword searc
+kristian kersting c
+big eyes cloth b
+count guoliangli
+michael carey ci
+ming zha
+schema ext
+dio
+guo
+icde guoli
+p
+2000 2
+keyword search over data
+paper jian
+max year gu
+guy
+Wang q
+nahid shahmehri count pap
+count paper guol
+count divesh paper bookti
+database icde ulman
+count jiannan wang year
+xml guoli
+database cidr suraji
+count icde suraj
+database sig
+accounting in beijing
+Qian X
+daat
+kristian kersting counting belief propaga
+count database a
+elsev
+jiannan wang trie
+max year wu ha
+keysearc
+count database icde s
+micha
+juju
+kemb
+michael carey cidr co
+max year guolia
+count per
+seaform
+surajit
+li xml
+count  author
+seaform autho
+database lizhu zhou
+fan j
+divesh paper or
+numbpaper wu hao
+sql suggest
+zhou xml sig
+database li
+bigs
+guoliang li keywor
+database icde jim grey
+kristian
+count perso
+accounting in b
+data vldb
+dd paper jianyong wang
+count icde s
+guoliang li search k
+count author pa
+count paper sigmo
+select title from paper wher
+count paper sigma
+big eyes cloth blue age
+malleable sch
+can
+database.title
+database icde kian l
+keyword search guolian
+xioan
+database 2000 201
+keyword search sigmo
+fuck
+nu paper vldb 2010
+cancer the
+o
+data vldb wang
+count jiannan year 2011=
+database 2000 2010
+paper jianyong wang tastie
+paper jiannan
+database lizhu zho
+malleable schema s
+divesh paper group b
+nahid shahmehri count paper
+paper jianyong wang clo
+guyo
+seaform aut
+mar
+max
+dive
+keyword search guoliang
+2010 20
+icde guol
+meta men
+data
+mal
+grou
+malleable schema
+database 2000 20
+sq
+sp
+su
+q
+sc
+sa
+se
+sd
+database vld ouzzani
+kristian kersting counting belief propa
+count aut
+icde d sigmod
+cancer therapy c
+count 2000 2010 aut
+group
+jia
+michael carey sigm
+kembelle
+database cidr icde count
+zhou xm
+keyword search guoliang li cou
+guoliang li searc
+count jiannan wayear
+guoliang li si
+database icde ulm
+panagi
+database sea
+guoliang li sigmod coun
+database sel
+jiannanw
+count person organization
+count database auth
+select title from paper where paper.title contai
+databa guoliang
+xml au
+jennife
+search cidr count 2
+xml guoliang 200
+database vldb  ouzzani
+data vldb wang 2000
+database vl ouzzani
+database cidr surajit coun
+icde li
+domain
+tsinghua guolian
+keyword search si
+paper jianna
+database icde micha
+count person organizatio
+guoliang ju fan
+database lizhu zh
+database icde jim
+hull
+beng chi sigmod
+count 2000 2010 auth
+keyword search over d
+database icde surajit co
+count paper iauthor
+count divesh paper book
+xi
+xm
+accounting in bei
+accurat
+database sigmod
+coupaper guoliang
+accu
+coudatabase icde surajit
+icde guo
+select title from paper where paper.title contains "quer
+select titl
+number database author
+big eyes clo
+database suraji
+database guoliang
+2
+numpaper wu hao
+hul
+guoliang ju f
+select title from paper where paper.title contains
+beng ching
+count paper jianyo
+countjiannan wang
+count person university
+h.v. jagad
+icde sur
+database lizhu z
+r
+kembel
+count databas
+ddddd paper jianyong wang
+data vldb2000 2010
+data icde sura
+weiyi sea
+sal
+zhou xml si
+cancer research award
+count guoliangli 2010
+xml aut
+seaf
+nahid shahmehri coun
+search cidr count 200
+data icde s
+database icde suraji
+Hall
+201
+databas suraj
+xml guoliang 2009 data search
+keyword search ov
+kristian kersting co
+wang data vldb 2009 2010
+malleable schema si
+database 2000 2009
+paper trie a
+select title from paper where paper.t
+count papjiannan wang
+count guoliang xm
+sale
+search cidr cou
+ming zhang
+divesh paper order by ye
+count divesh paper booktit
+select title fr
+keyse
+count ai
+paper jianyong wang tast
+michael carey s
+select title from paper where
+count au
+count dblp pape
+wang data v
+michael carey c
+xml
+database 2000 2
+Wa
+accounting i
+paper wu hao
+count author
+guoliang li 2
+database cidr suracount
+search engi
+max year wu
+H
+count paper sigm
+database cidr surajit co
+guoliang li j
+guoliang li k
+sql s
+count we
+kristian kersting counting bel
+guoliang li e
+count autho
+count person
+icde sigmod
+guoliang li s
+guoliang li p
+count guoliangli 20
+countbig eyes cloth blue age 30 china
+sql su
+sear
+coun2000 2010
+n database author
+seac
+dives
+database icde ouzzan
+paper jinannan w
+count paper suraji
+big eyes cl
+kristian kerst
+diode
+divesh paper order by year
+doma
+count icde surajit
+michael carey cidr coun
+icde dat sigmod
+ju
+count database icde suraj
+ji
+je
+divesh pap
+ja
+xioa
+big ey
+count database au
+jiannan wang bookti
+s
+database icde jimmy gray
+search cidr count 2005
+search cidr count 2007
+search cidr count 2003
+database 2000
+database 1998 19
+number paper jianyong wang
+select title fro
+michael carey cidr
+count icde su
+kristian k
+xml g
+xml a
+data vl
+count weiy
+count jiannan year 2
+carey sigmod co
+cancer research pap
+w
+data vl2000 2010
+set cov
+count paper jianyong wa
+suraji
+count paper jianyong wn
+numbe
+count pape
+pap
+count jiannan wyear
+author
+guoliang li 200
+count average paper
+count auth
+nu database author
+database cidr surajit
+pan
+malleable sc
+wang data vldb 201
+wang data vldb 200
+codivesh paper booktitle
+beng ch sigmod
+malleab
+ccc
+big eyes cloth blue age 30 chin
+Qian Xho
+count guoliang s
+count person organizat
+count guoliang x
+database cidr surajitcount
+speed
+coundivesh paper booktitle
+cancer
+database 1998 1
+jiannan wang
+count guoliang 2
+count database
+data vldb wang 20
+count paper sur
+moo
+number paper vldb 2010
+count paper suraj
+2006 2010 data vldb wan
+2006 2010 data vldb wang
+datab guoliang
+count pajiannan wang
+kristian kersting cou
+database icd
+t
+database icde michael fra
+wang data vldb 20
+2000 201
+count pweiyi
+count 2000 2010 autho
+count author paper
+count person or
+l xml
+b sigmod
+divesh paper boo
+moon
+paper jina
+kristian kerstin
+h.v
+ddd
+count da author
+data ming wang v
+xml gu
+paper jinan
+keyword search guoliang li
+kristian ke
+icde guolian
+acc
+accou
+count guoliang 20
+count guol
+database icde ji
+ouzzani
+acu
+ou
+keyword search over datab
+elsevier count
+jian
+accounti
+mari
+database selection
+count database author
+ju f
+select title from paper wherer
+meta me
+zhou xml sigmod
+number me
+m sigmod count
+guoliang l
+paper jiannan wang
+juj
+mich
+data search weiyi
+max year wu h
+guoliang keywor
+ragh
+keyword search guolia
+count database icde su
+mich sigmod count
+count paper g
+ac
+guoliang li pape
+search cidr count 20
+select title from paper where pape
+as
+keyword search over databa
+saleh
+xml guol
+googl
+cancer research a
+count divesh paper booktitl
+database icde kian-l
+keyword search
+fan ju
+count paper vldb 2
+cancer research p
+select title from paper where paper.title contains "q
+database icde surajit 200
+database.tit
+cdivesh paper booktitle
+data ming wan
+guoliang li siggm
+jiannan booktit
+wang dat
+count database aut
+sch
+data vldb wan2000 2010
+count person organizati
+paper jiann
+count divesh paper bookt
+guoliang li 2010
+select title
+database gu
+paper trie au
+ts
+carey sigmod cou
+schema extra
+keysearch
+mariuam
+rober
+cancer resear
+count paper autho
+fan
+count paper gray
+database ic
+database icde jimm
+select title from paper where paper.title contains "query
+max year guoliang
+cancer therapy cu
+database icde jim g
+accounting in
+guoliang key
+database.title.b
+database 1998 1999
+2006 2010 data
+database icde ki
+what
+database 20
+dddd paper jianyong wang
+beng c
+database icde jimmy gr
+whae
+sur
+hopcro
+count jiannan year 2011
+database icde surajit 2000 200
+database icde surajit 2000 201
+database suraj
+big eyes cloth blue a
+database icde ouz
+numb paper vldb 2010
+search
+schema extraction
+2006 2010 dat
+vim
+data 2000 201
+data 2000 200
+jiannan booktitle
+select title from paper where paper.tit
+vim lens
+countpaper guoliang
+xioanei
+select
+michael carey cidr c
+count paper author data
+count p author
+count me
+schema extraction divesh cikm 20
+tsinghua guoliang
+zhou xml
+count paper jianyong wan
+hopcroft social
+guoliang li pa
+malleable schema sigm
+numberpaper wu hao
+data ming wang vld
+count dblp pap
+Qian Xh
+search eng
+mall
+weiyi s
+v
+nahid shahmehri cou
+database icde sur
+ju fan
+kristian kersting counting belief
+zhou xml sigmo
+number o paper vldb 2010
+carey sigmod count
+accounting in beiji
+number pape
+guoliang li jianhua f
+fu
+data vldb wang 2000 2010
+fa
+count paper icdauthor
+numb
+count pap
+a
+set cove
+divesh p
+xml guoliang 2009 d
+jiann
+2006 2010 da
+cancer therapy
+hopcroft socia
+database sigm
+paper jianyong wang ghost
+pana
+paper
+database icde jimmy gra
+divesh paper group by
+database icde jim gray
+20
+count div
+29
+num database author
+guoliang li2010
+goog
+vim le
+divesh paper order by yea
+count datab author
+guoliang li search keywor
+L
+count guoli
+ces
+tsinghua
+guoliang li 2009
+paper jinannan wa
+paper jianyong wang cc
+vim len
+count i surajit
+data 2000 2001
+paper jianyong wang cl
+guoliang li sear
+count 2000 2010 au
+paper tri
+keyword sea
+count d author
+guoliang 201
+select title from pap
+count paper vldb
+cance
+2000 2010
+robert
+count paper guo
+Inducing an Order on Cellular Automata by a Group Operation
+keyword search sigmod
+count pa
+database cidrcount
+count paper weiyi
+ast
+guoliang li jianhu
+database cidcount
+michael carey sigmod coun
+database icde surajit coun
+database 19
+guoliang li key
+wang data vl
+div
+acura
+database searc
+count av paper
+select title from paper where pa
+guolia
+xml guoliang 2
+cancer research awa
+count paper
+count jiannan year 2008
+wang d
+number
+search cidr 200
+paper trie autho
+micha sigmod count
+hopcroft soc
+keyword search over database
+malleable schema sig
+jen
+schema
+paper wu
+michael carey sigmod count
+count paper jia
+big eyes cloth blue age 30
+database ccount
+b
+guol
+count  paper
+guoz
+database icde michael
+ouzza
+dat2000 2010
+count paper author da
+paper jiannan wang y
+nahid shahmehri count
+paper jia
+data ic
+elsevier
+count icde sur
+sele
+count paper su
+count paper si
+count avg paper
+divesh paper order b
+jiannan bookt
+count person organi
+cancer therap
+database guolia
+sql sugge
+count paper icde author
+ke
+database icde surajit 2000 2000
+database v ouzzani
+data icde su
+kr
+count person unive
+icde suraj
+count jianna
+Hal
+data search wei
+divesh paper grou
+h.v. jag
+accoun
+counjiannan wang
+jiannan bookti
+kristian kersting counting belief p
+kristian kersting counting belief r
+quer
+count paper surajit
+count guoliang 201
+number meng
+paper j
+n paper vldb 2010
+h.v. jagadi
+paper t
+paper w
+number  paper vldb 2010
+paper jianyong wang tas
+count paper au
+count paperjiannan wang
+vim l
+big eyes cloth blue
+select title from paper where paper.ti
+acur
+count 2000 2010
+x
+count divesh paper b
+kembe
+ses
+Qian zh
+select title from pape
+sea
+sel
+database icde w
+count zho
+database icde u
+database icde s
+data 2000 2010
+select pa
+guoliang li sigmod count
+count pap surajit
+wang data vldb 2010
+database icde o
+database icde m
+count paper icauthor
+database icde j
+database surajit
+count author p
+cancer therapy cur
+guoliang li search keyw
+count pape author
+count paper auth
+c
+data 20
+select title from paper where paper.title contains "que
+nahid shahm
+2006 2010 d
+meta meng
+count papmeng
+elsevi
+paper jin
+domain author
+paper tr
+tsinghua guoli
+database liz
+keyword search over dat
+2010 2
+data search
+database cidr surajcount
+database surajit ic
+kristian kersting counting belief prop
+jiannan wang t
+database icde mi
+jiannan wan
+count divesh pape
+cancer rese
+jiannan wang b
+pa
+autho
+count paper author d
+search cidr
+else
+weiyi search
+wang data
+count paper author datab
+Qian z
+Inducing an Order on Cellular Automata by a Grouping Operation
+cancer ther
+fuc
+search cidr count
+keyword search over databas
+moon hyun
+accura
+select tit
+divesh paper booktitl
+database cidr icount
+guoliang li sig
+count j
+count i
+h.v. jagadish
+count papejiannan wang
+keys
+search e
+count a
+keyw
+count g
+count d
+search c
+count z
+data 2000
+count p
+malleable sche
+count w
+database
+data guoliang
+divesh paper group by booktit
+divesh paper bookti
+paper jinannan wan
+wang da
+Qian zho
+count paper wei
+data vldb wan
+count guoliang xml
+divesh paper gro
+accounting in beijin
+coun
+database cid
+Inducing an Order on Cellular Automata by a Group Operation 291
+divesh paper group by bookt
+Qian Xhong
+database cidr surcount
+count big eyes cloth blue age 30 china
+count paper weiy
+sql sugges
+big
+schema e
+h.v. j
+xml auth
+schema extraction divesh ci
+schema s
+kembellec
+count wei
+max yea
+d
+schema extraction dives
+Qia
+count author pap
+data 200
+google
+malleable schema sigmod
+paper jianyong wang close
+max year g
+kristian kersti
+kristian kerstn
+data ming wang vldb
+divesh paper group by bo
+max year w
+paper jiannan w
+da2000 2010
+database cidr surajit c
+count a paper
+database.ti
+kristian kersting count
+schema extraction div
+be
+domai
+weiy
+codatabase surajit icde
+bi
+databas sur
+count divesh
+guolian
+nahid shahmehri
+count database icde a
+che
+data guolian
+Wang que
+database icde jimmy
+hopcroft
+tsinghu
+database cidr iccount
+guoliang li sea
+keyword search cid
+data vldb wa
+number men
+divesh paper gr
+jiannan wang tri
+accounting in beij
+countdatabase icde surajit
+paper jianyong wang
+tsinghua guol
+sds
+jaga
+count guoliangli 2
+count jiannan year 201
+count jiannan year 200
+select title from paper where paper.title contains "qu
+icde
+count guolian
+z
+zho
+count zhou
+keyword search over
+guoliang 2
+big e
+data gu
+count dblp paper
+count database icde aut
+count guo
+nah
+gro
+database icde kian-lee
+cobig eyes cloth blue age 30 china
+count paper aut
+big eyes c
+pape
+guoliang j
+guoliang k
+Inducing an Order on Cellular Automata by a Group Operation 29
+au
+Inducing an Order on Cellular Automata by a Group Operation 20
+guoliang z
+keyword search guoli
+icde l
+e
+d2000 2010
+icde g
+elsevie
+database cidr su
+data v2000 2010
+data icde surajit
+2000
+nahid shahmehri c
+icde s
+keyword sear
+gu
+gr
+2006 2010 data vldb wa
+i sigmod
+go
+query
+count m
+count icd
+database l
+select title f
+database i
+count person un
+domain autho
+database d
+database g
+guoliang li ke
+acurate
+database s
+ouzz
+select title from paper where paper.title c
+select title from paper where paper.title cont
+guoli
+wa
+michael
+database 1
+divesh paper order
+zh
+database icde surajit 200 2010
+ouzzaoi
+database icde michael frank
+xml guoliang 2009
+cancer therar
+2006 2010
+kris
+weiyi
+database icde ouzz
+database selec
+cancer research pa
+num p
+count pap author
+michael c
+guoliang li jianhua feng
+wenfei
+mic
+count paper gr
+count xmlguoliang
+num pap
+count paper gu
+krist
+michael car
+count database icde author
+data ming
+divesh paper group by boo
+count paper vldb 20
+paper jianyong wang clos
+n paper jianyong wang
+data ming wa
+kristian kersting countin
+michael carey sig
+database ci
+data icde
+database 2000 200
+sql sugg
+icd sigmod
+wang data vldb 2009 201
+elsevier coun
+count jiannan year 2011==
+jiannan wa
+data icd
+guoliang 2010
+paper trie auth
+ic sigmod
+weiyi se
+count  surajit
+guoliang li jian
+icde database sigmod
+count person universi
+count dblp p
+xml guoliang 2009 data sear
+guoliang zho
+account
+schema extraction divesh cikm 201
+weiyi sear
+f
+guoliang li sigmo
+wang data vldb 2009 2
+database selectio
+database icde ou
+count paper guolia
+xml guoliang 2009 dat
+paper jianyong ghost wang
+malleable schem
+beng
+database icde michael c
+nahid shahmehri count pa
+database icde ouzzani
+count paper jiany
+h.v. jagadis
+spe
+count paper vldb 2010
+count divesh paper boo
+kristian kersting counting belief pro
+2006 2010 data vld
+data vldb wang 2000 2
+xml guoliang 2009 data se
+Q
+kristian kersting counting belief prp
+count averag paper
+database icde kian
+database cicount
+count database icde auth
+count paper guoli
+schema extraction divesh cik
+schema extraction d
+cjiannan wang
+database 1998
+guoliang keyword
+data icde sur
+counpaper guoliang
+databas su
+icde su
+divesh pape
+moon hy
+divesh paper ord
+database cidr surajit count
+wenfe
+tsi
+michael ca
+cancer th
+count paper meng
+number paper
+2010
+cancer res
+daa
+keyword search cidr
+auth
+dat
+select title from paper where pap
+databa
+databc
+select title from paper whe
+count weiyi
+count 2000 2010 a
+suraj
+database.title.book
+malleable schema sigmo
+count paper jianyong wang
+database icde wan
+beng sigmod
+mariua
+paper trie author
+paper jianyong wang gho
+meta
+database icde michael cf
+be sigmod
+jiannan book
+database icde ouzza
+database icde surajit 2
+database surajit icde
+select title from paper wh
+count paper jianyong
+divesh paper order by y
+count paper icdeauthor
+que
+guoliang li keywo
+count paper author database
+database search engine
+guoliang li ji
+copaper guoliang
+divesh paper orde
+g
+number pa
+database icde surajit i
+accountin
+panagioti
+database icde surajit c
+kristian kers
+big eyes clot
+wang data vldb 2009
+databas surajit
+set
+database icde kian-le
+search cid
+count jia
+databas suraji
+count database icde autho
+guoliang li jianhua fen
+count 2000 2010 author
+Inducing an Order on Cellular Automata by a Group Operation 2001
+database selecti
+beng chin
+paper jinannan wang
+database  2006 2010
+schema extraction divesh cikm
+ddd paper jianyong wang
+tsinghua guo
+ben
+data sea
+michael sigmod count
+count papermeng
+data m
+coubig eyes cloth blue age 30 china
+malleable s
+database icde surajit 20
+nahid shahmehr
+paper jianyong ghostwang
+count person u
+guoliang li
+min
+database icde kian lee
+database.
+kristi
+count person o
+schema ex
+hopcr
+wha
+co2000 2010
+database icde michael carey
+count pers
+data guoli
+data vldb w
+big eyes
+guoliang li 20
+database cidr surajit cou
+wang data vldb 2
+keyword search s
+keyword search o
+database 200
+keyword search g
+keyword search c
+ho
+paper trie
+database surajit icd
+select title from paper w
+jiannanwan
+paper jinann
+count paper sura
+paper jianyong wang ccc
+database icde surajit count
+count paper jiannan wang
+jiannan booktitl
+icde suraji
+count pa surajit
+hopc
+jag
+panagio
+count papweiyi
+count icd surajit
+carey sigmod coun
+ming L
+beng ch
+nupaper wu hao
+icde data sigmod
+count person orga
+seafor
+xml guoliang
+qu
+paper jinanna
+paper jiannan wang ye
+h
+keyword search guoliang li c
+guoliang li sigmod cou
+max year guo
+ming z
+paper jiannan wang year
+npaper wu hao
+database cidr surajicount
+count person uni
+data mi
+kristian kersting counting be
+database icde surajit
+countdatabase surajit icde
+databas guoliang
+database select
+max year guolian
+cpaper guoliang
+database icde k
+count paper we
+Lixml
+database search engi
+kem
+count author pape
+schema extraction divesh
+key
+count2000 2010
+nahid shahmehri count p
+num pa
+count guoliangli 201
+divesh paper o
+divesh paper g
+divesh paper
+ch
+co
+2006 2010 data vldb
+cc
+ca
+ce
+UMD
+database ice
+count paper guoliang
+count xguoliang
+cancer r
+cancer t
+big eyes cloth blue age 30 china
+databas sura
+nahid s
+count dblp pa
+database search eng
+guoliang li se
+elsevier c
+data icde suraji
+Qian
+domain a
+Li XM
+count person univers
+database icde
+paper jianyong wang ghos
+database guolian
+count divesh paper booktitle
+malle
+jiannan wang tr
+select ti
+d paper jianyong wang
+vi
+panagiot
+database.title.boo
+kembell
+jiannan wang booktit
+beng chin oo
+divesh paper booktitle
+search cidr coun
+schema extract
+count datab
+mic sigmod count
+database 1998 199
+jiannan wang booktitle
+coujiannan wang
+count paper jian
+beng chi
+select title from paper where p
+count divesh paper
+database icde jim gry
+database icde wang
+database icde jim gra
+database icde jim gre
+keyword search gu
+database su
+ju fann
+keyword search guoliang l
+i
+database search engin
+database se
+sche
+kristian kersting counting b
+michael carey cidr cou
+database cidr count
+database si
+keyword se
+Wan
+accurate
+count dive
+kristian kersting counting belief propagati
+schema extrac
+Qian zhong
+wee
+wei
+wen
+data icde suraj
+guozhan
+acurat
+meta m
+count p surajit
+big eyes cloth blue age 3
+guoliang li paper
+database icde kia
+seafo
+divesh
+2000 20
+count paper gry
+database cidr icdcount
+xml author
+count paper gra
+database icde mich
+max year guol
+count database icde suraji
+database.titl
+count person univer
+number pap
+keysear
+michael carey sigmo
+xioane
+database icde su
+seaform a
+sdsd
+schema extraction di
+kristian kersting counting belie
+michae sigmod count
+zhou xml s
+data vldb wang 200
+schema extraction divesh c
+search cidr co
+ben sigmod
+database icde michael ca
+kristia
+2006 2010 data v
+count aver paper
+xml guo
+UM
+kri
+c2000 2010
+divesh paper group by b
+database sele
+databas s
+tsin
+el
+beng  sigmod
+h.
+database guoli
+database guo
+cancer re
+divesh paper order by
+weiyi searc
+keyword search guoliang li coun
+xml guoliang 2009 data s
+kristian kersting counting belief propagatio
+cbig eyes cloth blue age 30 china
+count database surajit icde
+icde gu
+guoliang li jianh
+xml guoliang 2009 data x
+guoliang li siggmo
+divesh paper group by booktitle
+hu
+guoliang li jianhua fe
+guoliang li sigm
+guoliang
+guoliang li sigg
+count
+ouz
+count ic
+j
+num paper
+data searc
+count paper author databas
+data2000 2010
+database cidr sura
+count paper vl
+num paper vldb 2010
+count databas author
+jiannan b
+tsingh
+jiannan w
+jenni
+xml guolia
+select title from paper where paper.title
+michael carey sigmod co
+michael carey sigmod c
+zhou
+count divesh pap
+cancer research awar
+U
+count divesh pae
+jianna
+data vld2000 2010
+count person org
+database count
+vldb  ouzzani

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ifsearch/!svn/ver/2501/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/launcher
+END
+Scalability.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/launcher/Scalability.java
+END
+MultiSugg.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ifsearch/!svn/ver/3448/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/launcher/MultiSugg.java
+END
+KeywordIndexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ifsearch/!svn/ver/3448/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/launcher/KeywordIndexer.java
+END
+Efficiency.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/launcher/Efficiency.java
+END
+CardEstimation.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ifsearch/!svn/ver/4289/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/launcher/CardEstimation.java
+END
+SingleSugg.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ifsearch/!svn/ver/3448/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/launcher/SingleSugg.java
+END
+WeightComputation.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/launcher/WeightComputation.java
+END

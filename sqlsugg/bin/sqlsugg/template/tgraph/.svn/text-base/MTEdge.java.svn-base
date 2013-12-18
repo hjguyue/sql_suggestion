@@ -1,0 +1,20 @@
+package sqlsugg.template;
+
+public class MTEdge extends TEdge{
+	public MTEdge () {
+		super(0);
+	}
+	
+	public MTEdge (double s) {
+		super(s);
+	}
+	
+	public TEdge copy () {
+		TEdge e = new MTEdge();
+		return e;
+	}
+	
+	public String toString () {
+		return "membership" + super.toString();
+	}
+}

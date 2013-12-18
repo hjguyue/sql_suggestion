@@ -1,0 +1,13 @@
+package sqlsugg.template;
+
+public class PTEdge extends TEdge{
+
+	public PTEdge(double s) {
+		super(s);
+	}
+
+	public TEdge copy() {
+		return null;
+	}
+
+}

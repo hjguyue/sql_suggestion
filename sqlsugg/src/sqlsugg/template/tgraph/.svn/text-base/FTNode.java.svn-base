@@ -1,0 +1,5 @@
+package sqlsugg.template;
+
+public class FTNode {
+
+}

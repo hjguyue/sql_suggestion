@@ -1,0 +1,34 @@
+R:person(id int key, name string, homepage string, title string, pgroup string, org string, country string)	0
+R:org(id int key, name string)	0
+R:conf(id int key, name string)	0
+R:pubs(id int key, name string, booktitle string, year int)	0
+R:topic(id int key, name string)	0
+R:serve_conf(rid int key, pid int key, cid int key)	2
+R:give_conf_talk(rid int key, pid int key, cid int key)	2
+R:give_tutorial(rid int key, pid int key, cid int key)	2
+R:give_org_talk(rid int key, pid int key, oid int key)	2
+R:related_org(rid int key, pid int key, oid int key)	2
+R:related_topic(rid int key, pid int key, tid int key)	2
+R:write_pub(rid int key, pid int key, pub_id int key)	2
+R:co_author(rid int key, pid1 int key, pid2 int key)	2
+R:related_people(rid int key, pid1 int key, pid2 int key)	2
+J:serve_conf	person	pid	id	n1
+J:serve_conf	conf	cid	id	n1
+J:give_conf_talk	person	pid	id	n1
+J:give_conf_talk	conf	cid	id	n1
+J:give_tutorial	person	pid	id	n1
+J:give_tutorial	conf	cid	id	n1
+J:give_org_talk	person	pid	id	n1
+J:give_org_talk	org	oid	id	n1
+J:related_org	person	pid	id	n1
+J:related_org	org	oid	id	n1
+J:related_topic	person	pid	id	n1
+J:related_topic	topic	tid	id	n1
+J:write_pub	person	pid	id	n1
+J:write_pub	pubs	pub_id	id	n1
+J:write_pub	person	pid	id	n1
+J:write_pub	pubs	pub_id	id	n1
+J:co_author	person	pid1	id	nn
+J:co_author	person	pid2	id	nn
+J:related_people	person	pid1	id	nn
+J:related_people	person	pid2	id	nn

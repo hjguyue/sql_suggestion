@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ifsearch/!svn/ver/2501/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/util/schemaGraph
+END
+SchemaGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/util/schemaGraph/SchemaGraph.java
+END
+Attribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/util/schemaGraph/Attribute.java
+END
+JoinEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/util/schemaGraph/JoinEdge.java
+END
+Multiplicity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/util/schemaGraph/Multiplicity.java
+END
+DataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/util/schemaGraph/DataType.java
+END
+Relation.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ifsearch/!svn/ver/3053/personal/JuFan/projects/sqlsugg/codes/sqlsugg/src/sqlsugg/util/schemaGraph/Relation.java
+END

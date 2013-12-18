@@ -1,0 +1,76 @@
+SElECT weight FROM relation_weight WHERE relation = 'paper'
+--------------------------------------------------------
+[data, mining, wang]
+SELECT  *
+FROM paper paper1, pa pa1, author author1, inv_index i0, inv_index i2, inv_index i1
+WHERE i0.word = "data_paper.title.value" AND i0.rcdid = paper1.id AND i1.word = "wang_author.name.value" AND i1.rcdid = author1.id AND i2.word = "mining_paper.title.value" AND i2.rcdid = paper1.id AND 
+paper1.id = pa1.pid AND pa1.aid = author1.id
+
+0(paper): #Card:  4039 , #Buckets: 426
+9(pa): #Card:  2766266 , #Buckets: 654
+27(author): #Card:  4834 , #Buckets: 49
+JOIN (9(pa),27(author)): Joined Result: #Card: 21412 , #Buckets: 283
+Scaling...:  2766266 with # of buckets: 1110
+Scaled! 21411 with # of buckets: 1110
+JOIN (0(paper),null): Joined Result: #Card: 230 , #Buckets: 265
+estimated cardinality: 230
+--------------------------------------------------------
+[keyword, search, li]
+SELECT  *
+FROM paper paper1, pa pa1, author author1, inv_index i0, inv_index i2, inv_index i1
+WHERE i0.word = "keyword_paper.title.value" AND i0.rcdid = paper1.id AND i1.word = "li_author.name.value" AND i1.rcdid = author1.id AND i2.word = "search_paper.title.value" AND i2.rcdid = paper1.id AND 
+paper1.id = pa1.pid AND pa1.aid = author1.id
+
+0(paper): #Card:  125 , #Buckets: 37
+9(pa): #Card:  2766266 , #Buckets: 654
+27(author): #Card:  4411 , #Buckets: 45
+JOIN (9(pa),27(author)): Joined Result: #Card: 20021 , #Buckets: 245
+Scaling...:  2766266 with # of buckets: 1110
+Scaled! 20020 with # of buckets: 1110
+JOIN (0(paper),null): Joined Result: #Card: 4 , #Buckets: 15
+estimated cardinality: 4
+--------------------------------------------------------
+[machine, learning, michael]
+SELECT  *
+FROM paper paper1, pa pa1, author author1, inv_index i0, inv_index i2, inv_index i1
+WHERE i0.word = "machine_paper.title.value" AND i0.rcdid = paper1.id AND i1.word = "learning_paper.title.value" AND i1.rcdid = paper1.id AND i2.word = "michael_author.name.value" AND i2.rcdid = author1.id AND 
+paper1.id = pa1.pid AND pa1.aid = author1.id
+
+0(paper): #Card:  1516 , #Buckets: 234
+9(pa): #Card:  2766266 , #Buckets: 654
+27(author): #Card:  6363 , #Buckets: 64
+JOIN (9(pa),27(author)): Joined Result: #Card: 31053 , #Buckets: 343
+Scaling...:  2766266 with # of buckets: 1110
+Scaled! 31053 with # of buckets: 1110
+JOIN (0(paper),null): Joined Result: #Card: 80 , #Buckets: 117
+estimated cardinality: 80
+--------------------------------------------------------
+[social, network, liu]
+SELECT  *
+FROM paper paper1, pa pa1, author author1, inv_index i0, inv_index i2, inv_index i1
+WHERE i0.word = "liu_author.name.value" AND i0.rcdid = author1.id AND i1.word = "network_paper.title.value" AND i1.rcdid = paper1.id AND i2.word = "social_paper.title.value" AND i2.rcdid = paper1.id AND 
+paper1.id = pa1.pid AND pa1.aid = author1.id
+
+0(paper): #Card:  287 , #Buckets: 78
+9(pa): #Card:  2766266 , #Buckets: 654
+27(author): #Card:  3338 , #Buckets: 34
+JOIN (9(pa),27(author)): Joined Result: #Card: 13326 , #Buckets: 220
+Scaling...:  2766266 with # of buckets: 1110
+Scaled! 13326 with # of buckets: 1110
+JOIN (0(paper),null): Joined Result: #Card: 5 , #Buckets: 21
+estimated cardinality: 5
+--------------------------------------------------------
+[search, engine, meng]
+SELECT  *
+FROM paper paper1, pa pa1, author author1, inv_index i0, inv_index i2, inv_index i1
+WHERE i0.word = "meng_author.name.value" AND i0.rcdid = author1.id AND i1.word = "search_paper.title.value" AND i1.rcdid = paper1.id AND i2.word = "engine_paper.title.value" AND i2.rcdid = paper1.id AND 
+paper1.id = pa1.pid AND pa1.aid = author1.id
+
+0(paper): #Card:  598 , #Buckets: 95
+9(pa): #Card:  2766266 , #Buckets: 654
+27(author): #Card:  479 , #Buckets: 5
+JOIN (9(pa),27(author)): Joined Result: #Card: 1969 , #Buckets: 30
+Scaling...:  2766266 with # of buckets: 1110
+Scaled! 1969 with # of buckets: 1110
+JOIN (0(paper),null): Joined Result: #Card: 10 , #Buckets: 35
+estimated cardinality: 10

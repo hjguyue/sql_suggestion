@@ -1,0 +1,50 @@
+package sqlsugg.template;
+
+public class OTEdge extends TEdge {
+	public Operation op;
+	
+	public OTEdge (Operation op) {
+		super(0);
+		this.op = op;
+	}
+	
+	public OTEdge (Operation op, double s) {
+		super(s);
+		this.op = op;
+	}
+
+	public enum Operation {
+		CONTAINS (1), 
+		IN (2), 
+		GREATER (3), 
+		LOWER (4);
+		
+		int value;
+		
+		Operation (int v) {
+			value = v;
+		}
+		
+		public String toString () {
+			switch (value) {
+			case 1:
+				return "CONTAINS";
+			case 2: 
+				return "=";
+			case 3:
+				return ">";
+			case 4:
+				return "<";
+			}
+			return "";
+		}
+	}
+	
+	public TEdge copy () {
+		return null;
+	}
+	
+	public String toString () {
+		return "operator" + super.toString();
+	}
+}

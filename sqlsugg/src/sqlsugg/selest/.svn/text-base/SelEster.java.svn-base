@@ -1,0 +1,66 @@
+package sqlsugg.selest;
+
+import java.util.*;
+
+import sqlsugg.backends.*;
+import sqlsugg.sqlgen.*;
+import sqlsugg.template.*;
+import sqlsugg.template.tgraph.*;
+import sqlsugg.util.schemaGraph.*;
+import sqlsugg.util.*;
+
+public class SelEster {
+	
+	protected final String INVTABLE = "inv_index";
+	
+	SQLBackend sql;
+	
+	int width;
+	
+	Map<String, BiHistogram> bihistograms;
+	
+	Map<String, MHBucketGen> table2Gen = new HashMap<String, MHBucketGen> ();
+	
+	SchemaGraph sg;
+	
+	HashFamily hashes = null;
+	
+	public SelEster (SQLBackend pSql, int pHashNum, int pWidth, SchemaGraph pSg) {
+		sql = pSql;
+		hashes = new HashFamily (pHashNum, 1000000);
+		width = pWidth;
+		bihistograms = new HashMap<String, BiHistogram> ();
+		sg = pSg;
+	}
+	
+	public void constructHistograms (SchemaGraph sg) throws Exception {
+		for (Relation r: sg.getRelations()) {
+			List<Pair<Relation, Attribute>> rs = sg.getReference(r);
+			if (rs.size() == 2) {
+				JoinEdge edge1 = sg.getJoinEdge(r.getName(), rs.get(0).first.getName());
+				JoinEdge edge2 = sg.getJoinEdge(r.getName(), rs.get(1).first.getName());
+				BiHistogram bhist1 = new BiHistogram (edge1.foreignAtt, edge2.foreignAtt, r.getName(), 
+						sql);
+				bhist1.eqConstruct(width, hashes, table2Gen);
+				BiHistogram bhist2 = new BiHistogram (edge2.foreignAtt, edge1.foreignAtt, r.getName(), 
+						sql);
+				bhist2.eqConstruct(width, hashes, table2Gen);
+				bihistograms.put (edge1.foreignAtt + "_" + edge2.foreignAtt, bhist1);
+				bihistograms.put (edge2.foreignAtt + "_" + edge1.foreignAtt, bhist2);
+			}
+		}
+	}
+	
+	public int estimate (SQLStruct sqlStruct) throws Exception {
+		Template template = sqlStruct.template;
+		Collection<MapIns> matching = sqlStruct.matching;
+		Set<RTNode> leafNodes = template.getLeafNodes();
+		int card = -1;
+		for (RTNode leafNode: leafNodes) {
+			OpTree opTree = new OpTree (template, leafNode, sg, width, hashes, sql, table2Gen);
+			card = opTree.estimateCard(matching, bihistograms);
+			break;
+		}
+		return card;
+	}
+}

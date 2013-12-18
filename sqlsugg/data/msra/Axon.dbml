@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="axon" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=axon;Integrated Security=True" SettingsObjectName="ConsoleApplication1.Properties.Settings" SettingsPropertyName="axonConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.etblAdvancedSearchQuery" Member="etblAdvancedSearchQueries">
+    <Type Name="etblAdvancedSearchQuery">
+      <Column Name="SearchId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SearchGuid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="QueryObjectXml" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="SearchExecutedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblUserState" Member="etblUserStates">
+    <Type Name="etblUserState">
+      <Column Name="UserStateID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmployeeAlias" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DeepLinkURL" Type="System.String" DbType="VarChar(2083) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblAgreement" Member="etblAgreements">
+    <Type Name="etblAgreement">
+      <Column Name="AgreementID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContractID" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="ContractScheduleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContractTitle" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="ContractScheduleTitle" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="ContractStartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ContractExpireDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ContractStatus" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblAgreement_mtblEntitlement" Member="mtblEntitlements" ThisKey="AgreementID" OtherKey="AgreementID" Type="mtblEntitlement" />
+      <Association Name="etblAgreement_mtblIncident" Member="mtblIncidents" ThisKey="AgreementID" OtherKey="AgreementID" Type="mtblIncident" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblAppeal" Member="etblAppeals">
+    <Type Name="etblAppeal">
+      <Column Name="AppealID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CaseNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CaseTitle" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="SourceIncidentNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CaseStatusName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CaseSubStatusName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CasePriorityName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOnDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedOnDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LatestOwnerAssignedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AppealCreatedOnDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AppealModifiedOnDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblAppeal_mtblAppeal" Member="mtblAppeals" ThisKey="AppealID" OtherKey="AppealID" Type="mtblAppeal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblCompany" Member="etblCompanies">
+    <Type Name="etblCompany">
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblCompany_etblCompanyDomain" Member="etblCompanyDomains" ThisKey="CompanyID" OtherKey="CompanyID" Type="etblCompanyDomain" />
+      <Association Name="etblCompany_mtblAppeal" Member="mtblAppeals" ThisKey="CompanyID" OtherKey="CompanyID" Type="mtblAppeal" />
+      <Association Name="etblCompany_mtblCustomerHealth" Member="mtblCustomerHealth" ThisKey="CompanyID" OtherKey="CompanyID" Type="mtblCustomerHealth" Cardinality="One" />
+      <Association Name="etblCompany_mtblIncident" Member="mtblIncidents" ThisKey="CompanyID" OtherKey="CompanyID" Type="mtblIncident" />
+      <Association Name="etblCompany_mtblPFEDispatch" Member="mtblPFEDispatches" ThisKey="CompanyID" OtherKey="CompanyID" Type="mtblPFEDispatch" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblCompanyDomain" Member="etblCompanyDomains">
+    <Type Name="etblCompanyDomain">
+      <Column Name="CompanyDomainID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SourceSystemID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DomainName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblCompany_etblCompanyDomain" Member="etblCompany" ThisKey="CompanyID" OtherKey="CompanyID" Type="etblCompany" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblCustomerContact" Member="etblCustomerContacts">
+    <Type Name="etblCustomerContact">
+      <Column Name="CustomerContactID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(182) NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerEmail" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerSecondaryEmail" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="CustomerPhone" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblCustomerContact_etblCustomerContactEmployee" Member="etblCustomerContactEmployees" ThisKey="CustomerContactID" OtherKey="CustomerContactID" Type="etblCustomerContactEmployee" />
+      <Association Name="etblCustomerContact_mtblIncident" Member="mtblIncidents" ThisKey="CustomerContactID" OtherKey="CustomerContactID" Type="mtblIncident" />
+      <Association Name="etblCustomerContact_mtblPFEDispatch" Member="mtblPFEDispatches" ThisKey="CustomerContactID" OtherKey="CustomerContactID" Type="mtblPFEDispatch" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblCustomerContactEmployee" Member="etblCustomerContactEmployees">
+    <Type Name="etblCustomerContactEmployee">
+      <Column Name="CustomerContactID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblCustomerContact_etblCustomerContactEmployee" Member="etblCustomerContact" ThisKey="CustomerContactID" OtherKey="CustomerContactID" Type="etblCustomerContact" IsForeignKey="true" />
+      <Association Name="etblEmployee_etblCustomerContactEmployee" Member="etblEmployee" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblDefect" Member="etblDefects">
+    <Type Name="etblDefect">
+      <Column Name="DefectID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BugDatabase" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="BugID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Resolution" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Severity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AssignedToEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OpenedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OpenDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ResolvedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResolvedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClosedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ClosedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsCurrentFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblDefect_mtblDefect" Member="mtblDefects" ThisKey="DefectID" OtherKey="DefectID" Type="mtblDefect" />
+      <Association Name="etblEmployee_etblDefect" Member="etblEmployee" ThisKey="AssignedToEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_etblDefect1" Member="etblEmployee1" ThisKey="ClosedByEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_etblDefect2" Member="etblEmployee2" ThisKey="OpenedByEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_etblDefect3" Member="etblEmployee3" ThisKey="ResolvedByEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblEmployee" Member="etblEmployees">
+    <Type Name="etblEmployee">
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PersonnelNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReportsToPersonnelNbr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="WorkPhoneNumber" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="AddressBookTitleDesc" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ISOCountryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CityName" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="BuildingName" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="HasDirectReports" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ProductsSupported" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PersonStatusDesc" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MPath" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="DomainName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="etblEmployee_etblCustomerContactEmployee" Member="etblCustomerContactEmployees" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="etblCustomerContactEmployee" />
+      <Association Name="etblEmployee_etblDefect" Member="etblDefects" ThisKey="EmployeeID" OtherKey="AssignedToEmployeeID" Type="etblDefect" />
+      <Association Name="etblEmployee_etblDefect1" Member="etblDefects1" ThisKey="EmployeeID" OtherKey="ClosedByEmployeeID" Type="etblDefect" />
+      <Association Name="etblEmployee_etblDefect2" Member="etblDefects2" ThisKey="EmployeeID" OtherKey="OpenedByEmployeeID" Type="etblDefect" />
+      <Association Name="etblEmployee_etblDefect3" Member="etblDefects3" ThisKey="EmployeeID" OtherKey="ResolvedByEmployeeID" Type="etblDefect" />
+      <Association Name="etblEmployee_etblProblem" Member="etblProblems" ThisKey="EmployeeID" OtherKey="CreatedByEmployeeID" Type="etblProblem" />
+      <Association Name="etblEmployee_etblProblem1" Member="etblProblems1" ThisKey="EmployeeID" OtherKey="ModifiedByEmployeeID" Type="etblProblem" />
+      <Association Name="etblEmployee_etblProblem2" Member="etblProblems2" ThisKey="EmployeeID" OtherKey="OwnerEmployeeID" Type="etblProblem" />
+      <Association Name="etblEmployee_etblTask" Member="etblTasks" ThisKey="EmployeeID" OtherKey="CreatedByEmployeeID" Type="etblTask" />
+      <Association Name="etblEmployee_etblTask1" Member="etblTasks1" ThisKey="EmployeeID" OtherKey="ModifiedByEmployeeID" Type="etblTask" />
+      <Association Name="etblEmployee_etblTask2" Member="etblTasks2" ThisKey="EmployeeID" OtherKey="OwnerEmployeeID" Type="etblTask" />
+      <Association Name="etblEmployee_mtblAppeal" Member="mtblAppeals" ThisKey="EmployeeID" OtherKey="AppealCreatorEmployeeID" Type="mtblAppeal" />
+      <Association Name="etblEmployee_mtblAppeal1" Member="mtblAppeals1" ThisKey="EmployeeID" OtherKey="AppealModifierEmployeeID" Type="mtblAppeal" />
+      <Association Name="etblEmployee_mtblAppeal2" Member="mtblAppeals2" ThisKey="EmployeeID" OtherKey="AppealUserEmployeeID" Type="mtblAppeal" />
+      <Association Name="etblEmployee_mtblAppeal3" Member="mtblAppeals3" ThisKey="EmployeeID" OtherKey="BAMEmployeeID" Type="mtblAppeal" />
+      <Association Name="etblEmployee_mtblAppeal4" Member="mtblAppeals4" ThisKey="EmployeeID" OtherKey="CreatorEmployeeID" Type="mtblAppeal" />
+      <Association Name="etblEmployee_mtblAppeal5" Member="mtblAppeals5" ThisKey="EmployeeID" OtherKey="ModifierEmployeeID" Type="mtblAppeal" />
+      <Association Name="etblEmployee_mtblAppeal6" Member="mtblAppeals6" ThisKey="EmployeeID" OtherKey="OwnerEmployeeID" Type="mtblAppeal" />
+      <Association Name="etblEmployee_mtblAppeal7" Member="mtblAppeals7" ThisKey="EmployeeID" OtherKey="TAMEmployeeID" Type="mtblAppeal" />
+      <Association Name="etblEmployee_mtblEmployeeMessage" Member="mtblEmployeeMessages" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="mtblEmployeeMessage" />
+      <Association Name="etblEmployee_mtblIncident" Member="mtblIncidents" ThisKey="EmployeeID" OtherKey="BAMEmployeeID" Type="mtblIncident" />
+      <Association Name="etblEmployee_mtblIncident1" Member="mtblIncidents1" ThisKey="EmployeeID" OtherKey="CreatorEmployeeID" Type="mtblIncident" />
+      <Association Name="etblEmployee_mtblIncident2" Member="mtblIncidents2" ThisKey="EmployeeID" OtherKey="ModifiedByEmployeeID" Type="mtblIncident" />
+      <Association Name="etblEmployee_mtblIncident3" Member="mtblIncidents3" ThisKey="EmployeeID" OtherKey="OwnerEmployeeID" Type="mtblIncident" />
+      <Association Name="etblEmployee_mtblIncident4" Member="mtblIncidents4" ThisKey="EmployeeID" OtherKey="TAMEmployeeID" Type="mtblIncident" />
+      <Association Name="etblEmployee_mtblPFEDispatch" Member="mtblPFEDispatches" ThisKey="EmployeeID" OtherKey="BAMEmployeeID" Type="mtblPFEDispatch" />
+      <Association Name="etblEmployee_mtblPFEDispatch1" Member="mtblPFEDispatches1" ThisKey="EmployeeID" OtherKey="CreatorEmployeeID" Type="mtblPFEDispatch" />
+      <Association Name="etblEmployee_mtblPFEDispatch2" Member="mtblPFEDispatches2" ThisKey="EmployeeID" OtherKey="OwnerEmployeeID" Type="mtblPFEDispatch" />
+      <Association Name="etblEmployee_mtblPFEDispatch3" Member="mtblPFEDispatches3" ThisKey="EmployeeID" OtherKey="PFEEmployeeID" Type="mtblPFEDispatch" />
+      <Association Name="etblEmployee_mtblPFEDispatch4" Member="mtblPFEDispatches4" ThisKey="EmployeeID" OtherKey="TAMEmployeeID" Type="mtblPFEDispatch" />
+      <Association Name="etblEmployee_mtblRAPIDEngagement" Member="mtblRAPIDEngagements" ThisKey="EmployeeID" OtherKey="EngineerEmployeeID" Type="mtblRAPIDEngagement" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblETLControl" Member="etblETLControls">
+    <Type Name="etblETLControl">
+      <Column Name="ETLControlID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExtractSourceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ExtractFromDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ExtractToDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="RowsExtracted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExtractStatus" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblIncident" Member="etblIncidents">
+    <Type Name="etblIncident">
+      <Column Name="IncidentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SourceSystem" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceRequestNumber" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Severity" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CSID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CritSitIncident" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="CritSitOwnerAlias" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CritSitCreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ServiceLevel" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SRPhase" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IncidentCreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IncidentClosedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IRResponseMet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UniqueCaseOwnerCount" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="MSsolveProblemCount" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LastContactedDatetime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CommunicationRate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SolutionDeliveredOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblIncident_mtblUDE" Member="mtblUDEs" ThisKey="IncidentID" OtherKey="IncidentID" Type="mtblUDE" />
+      <Association Name="etblIncident_mtblEntitlement" Member="mtblEntitlements" ThisKey="IncidentID" OtherKey="IncidentID" Type="mtblEntitlement" />
+      <Association Name="etblIncident_mtblIncident" Member="mtblIncident" ThisKey="IncidentID" OtherKey="IncidentID" Type="mtblIncident" Cardinality="One" />
+      <Association Name="etblIncident_mtblProblemIncident" Member="mtblProblemIncidents" ThisKey="IncidentID" OtherKey="IncidentID" Type="mtblProblemIncident" />
+      <Association Name="etblIncident_mtblTaskProblemIncident" Member="mtblTaskProblemIncidents" ThisKey="IncidentID" OtherKey="IncidentID" Type="mtblTaskProblemIncident" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblMessage" Member="etblMessages">
+    <Type Name="etblMessage">
+      <Column Name="MessageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SourceSystem" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="SourceID" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageType" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageBody" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageBodyType" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageCreatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblMessage_mtblEmployeeMessage" Member="mtblEmployeeMessages" ThisKey="MessageID" OtherKey="MessageID" Type="mtblEmployeeMessage" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblProblem" Member="etblProblems">
+    <Type Name="etblProblem">
+      <Column Name="ProblemID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProblemNumber" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ProblemType" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedDateID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClosedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ClosedDateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReviewAgeScore" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReviewLaborScore" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SolutionDeliveredOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblProblem_mtblDefect" Member="mtblDefects" ThisKey="ProblemID" OtherKey="ProblemID" Type="mtblDefect" />
+      <Association Name="etblProblem_mtblProblemIncident" Member="mtblProblemIncidents" ThisKey="ProblemID" OtherKey="ProblemID" Type="mtblProblemIncident" />
+      <Association Name="etblProblem_mtblTaskProblemIncident" Member="mtblTaskProblemIncidents" ThisKey="ProblemID" OtherKey="ProblemID" Type="mtblTaskProblemIncident" />
+      <Association Name="etblEmployee_etblProblem" Member="etblEmployee" ThisKey="CreatedByEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_etblProblem1" Member="etblEmployee1" ThisKey="ModifiedByEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_etblProblem2" Member="etblEmployee2" ThisKey="OwnerEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblProblemEmployeeIDOwnershipLevel" Member="etblProblemEmployeeIDOwnershipLevels">
+    <Type Name="etblProblemEmployeeIDOwnershipLevel">
+      <Column Name="ProblemID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OwnershipLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblProduct" Member="etblProducts">
+    <Type Name="etblProduct">
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PESProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="PESProductFamilyName" Type="System.String" DbType="NVarChar(512) NOT NULL" CanBeNull="false" />
+      <Column Name="PESProductClusterName" Type="System.String" DbType="NVarChar(512) NOT NULL" CanBeNull="false" />
+      <Column Name="PESProductUnitName" Type="System.String" DbType="NVarChar(512) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblProduct_mtblIncident" Member="mtblIncidents" ThisKey="ProductID" OtherKey="ProductID" Type="mtblIncident" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblRAPID" Member="etblRAPIDs">
+    <Type Name="etblRAPID">
+      <Column Name="ROSSID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RequestTrackingNumber" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceName" Type="System.String" DbType="NVarChar(800) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StartDateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToolsetExpirationDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="TierName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblROSS_etblRAPID" Member="etblROSS" ThisKey="ROSSID" OtherKey="ROSSID" Type="etblROSS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblROSS" Member="etblROSSes">
+    <Type Name="etblROSS">
+      <Column Name="ROSSID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CaseID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RequestTrackingNumber" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="IncidentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Severity" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="ProductName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="ServiceType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServiceSubType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EstimatedDuration" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByEmployeeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblROSS_etblRAPID" Member="etblRAPID" ThisKey="ROSSID" OtherKey="ROSSID" Type="etblRAPID" Cardinality="One" />
+      <Association Name="etblROSS_mtblPFEDispatch" Member="mtblPFEDispatches" ThisKey="ROSSID" OtherKey="ROSSID" Type="mtblPFEDispatch" />
+      <Association Name="etblROSS_mtblRAPIDEngagement" Member="mtblRAPIDEngagements" ThisKey="ROSSID" OtherKey="ROSSID" Type="mtblRAPIDEngagement" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblSupportTopic" Member="etblSupportTopics">
+    <Type Name="etblSupportTopic">
+      <Column Name="SupportTopicID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SupportTopic" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblSupportTopic_mtblIncident" Member="mtblIncidents" ThisKey="SupportTopicID" OtherKey="SupportTopicID" Type="mtblIncident" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblTask" Member="etblTasks">
+    <Type Name="etblTask">
+      <Column Name="TaskID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TaskNumber" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="TaskSequenceNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TaskType" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedDateID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClosedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ClosedDateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblTask_mtblTaskProblemIncident" Member="mtblTaskProblemIncidents" ThisKey="TaskID" OtherKey="TaskID" Type="mtblTaskProblemIncident" />
+      <Association Name="etblEmployee_etblTask" Member="etblEmployee" ThisKey="CreatedByEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_etblTask1" Member="etblEmployee1" ThisKey="ModifiedByEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_etblTask2" Member="etblEmployee2" ThisKey="OwnerEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblTaskEmployeeIDOwnershipLevel" Member="etblTaskEmployeeIDOwnershipLevels">
+    <Type Name="etblTaskEmployeeIDOwnershipLevel">
+      <Column Name="TaskID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OwnershipLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblUDE" Member="etblUDEs">
+    <Type Name="etblUDE">
+      <Column Name="UDEID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SRNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FileName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FirstDiagnosticResultGenerated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastDiagnosticResultgenerated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DiagnosticMessageCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UDEConsoleLink" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblUDE_mtblUDE" Member="mtblUDEs" ThisKey="UDEID" OtherKey="UDEID" Type="mtblUDE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etblUserSettings" Member="etblUserSettings">
+    <Type Name="etblUserSetting">
+      <Column Name="UserSettingsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmployeeAlias" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Settings" Type="System.String" DbType="NVarChar(2083) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblAppeal" Member="mtblAppeals">
+    <Type Name="mtblAppeal">
+      <Column Name="AppealID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OwnerEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CreatorEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ModifierEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TAMEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BAMEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AppealUserEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AppealCreatorEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AppealModifierEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblEmployee_mtblAppeal" Member="etblEmployee" ThisKey="AppealCreatorEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblAppeal_mtblAppeal" Member="etblAppeal" ThisKey="AppealID" OtherKey="AppealID" Type="etblAppeal" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblAppeal1" Member="etblEmployee1" ThisKey="AppealModifierEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblAppeal2" Member="etblEmployee2" ThisKey="AppealUserEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblAppeal3" Member="etblEmployee3" ThisKey="BAMEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblCompany_mtblAppeal" Member="etblCompany" ThisKey="CompanyID" OtherKey="CompanyID" Type="etblCompany" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblAppeal4" Member="etblEmployee4" ThisKey="CreatorEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblAppeal5" Member="etblEmployee5" ThisKey="ModifierEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblAppeal6" Member="etblEmployee6" ThisKey="OwnerEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblAppeal7" Member="etblEmployee7" ThisKey="TAMEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblUDE" Member="mtblUDEs">
+    <Type Name="mtblUDE">
+      <Column Name="UDEID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IncidentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblIncident_mtblUDE" Member="etblIncident" ThisKey="IncidentID" OtherKey="IncidentID" Type="etblIncident" IsForeignKey="true" />
+      <Association Name="etblUDE_mtblUDE" Member="etblUDE" ThisKey="UDEID" OtherKey="UDEID" Type="etblUDE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblCustomerHealth" Member="mtblCustomerHealths">
+    <Type Name="mtblCustomerHealth">
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRS_OverallTB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PRS_OverallBB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PRS_OverallQotsTB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PRS_OverallQotsBB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PRS_RemediationTB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PRS_RemediationBB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="IBS_OverallTB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="IBS_OverallBB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="IBS_CritSitOverallTB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="IBS_CritSitOverallBB" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="DateID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblCompany_mtblCustomerHealth" Member="etblCompany" ThisKey="CompanyID" OtherKey="CompanyID" Type="etblCompany" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblDefect" Member="mtblDefects">
+    <Type Name="mtblDefect">
+      <Column Name="DefectID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProblemID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblDefect_mtblDefect" Member="etblDefect" ThisKey="DefectID" OtherKey="DefectID" Type="etblDefect" IsForeignKey="true" />
+      <Association Name="etblProblem_mtblDefect" Member="etblProblem" ThisKey="ProblemID" OtherKey="ProblemID" Type="etblProblem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblEmployeeMessage" Member="mtblEmployeeMessages">
+    <Type Name="mtblEmployeeMessage">
+      <Column Name="EmployeeMessageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsReadFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblEmployee_mtblEmployeeMessage" Member="etblEmployee" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblMessage_mtblEmployeeMessage" Member="etblMessage" ThisKey="MessageID" OtherKey="MessageID" Type="etblMessage" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblEmployeeMessageSourcExclusionPreference" Member="mtblEmployeeMessageSourcExclusionPreferences">
+    <Type Name="mtblEmployeeMessageSourcExclusionPreference">
+      <Column Name="EmployeeMessagePreferenceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageSourceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblEntitlement" Member="mtblEntitlements">
+    <Type Name="mtblEntitlement">
+      <Column Name="IncidentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AgreementID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblAgreement_mtblEntitlement" Member="etblAgreement" ThisKey="AgreementID" OtherKey="AgreementID" Type="etblAgreement" IsForeignKey="true" />
+      <Association Name="etblIncident_mtblEntitlement" Member="etblIncident" ThisKey="IncidentID" OtherKey="IncidentID" Type="etblIncident" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblIncident" Member="mtblIncidents">
+    <Type Name="mtblIncident">
+      <Column Name="IncidentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatorEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedByEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TAMEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BAMEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerContactID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AgreementID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SupportTopicID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ClosedDateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LaborMinutesPerIncident" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IRResponseTime" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CaseIdleMinutes" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="MinutesSpentInScopingPhase" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="MinutesSpentInTroubleshootingPhase" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="MinutesSpentInSolutionDeliveredPhase" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReviewAgeScore" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReviewLaborScore" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="msrepl_synctran_ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="etblAgreement_mtblIncident" Member="etblAgreement" ThisKey="AgreementID" OtherKey="AgreementID" Type="etblAgreement" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblIncident" Member="etblEmployee" ThisKey="BAMEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblCompany_mtblIncident" Member="etblCompany" ThisKey="CompanyID" OtherKey="CompanyID" Type="etblCompany" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblIncident1" Member="etblEmployee1" ThisKey="CreatorEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblCustomerContact_mtblIncident" Member="etblCustomerContact" ThisKey="CustomerContactID" OtherKey="CustomerContactID" Type="etblCustomerContact" IsForeignKey="true" />
+      <Association Name="etblIncident_mtblIncident" Member="etblIncident" ThisKey="IncidentID" OtherKey="IncidentID" Type="etblIncident" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblIncident2" Member="etblEmployee2" ThisKey="ModifiedByEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblIncident3" Member="etblEmployee3" ThisKey="OwnerEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblProduct_mtblIncident" Member="etblProduct" ThisKey="ProductID" OtherKey="ProductID" Type="etblProduct" IsForeignKey="true" />
+      <Association Name="etblSupportTopic_mtblIncident" Member="etblSupportTopic" ThisKey="SupportTopicID" OtherKey="SupportTopicID" Type="etblSupportTopic" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblIncident4" Member="etblEmployee4" ThisKey="TAMEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblIncidentEmployeeOwnership" Member="mtblIncidentEmployeeOwnerships">
+    <Type Name="mtblIncidentEmployeeOwnership">
+      <Column Name="IncidentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OwnershipLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblPFEDispatch" Member="mtblPFEDispatches">
+    <Type Name="mtblPFEDispatch">
+      <Column Name="ROSSID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OwnerEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CreatorEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TAMEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BAMEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PFEEmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CustomerContactID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AssignmentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DispatchMsgSentDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RequestArea" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="RequestRegion" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="RequestCountry" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ScheduledArrivalDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScheduledArrivalDateID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ScheduledDepartureDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScheduledDepartureDateID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsFirst" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsLast" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblROSS_mtblPFEDispatch" Member="etblROSS" ThisKey="ROSSID" OtherKey="ROSSID" Type="etblROSS" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblPFEDispatch" Member="etblEmployee" ThisKey="BAMEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblCompany_mtblPFEDispatch" Member="etblCompany" ThisKey="CompanyID" OtherKey="CompanyID" Type="etblCompany" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblPFEDispatch1" Member="etblEmployee1" ThisKey="CreatorEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblCustomerContact_mtblPFEDispatch" Member="etblCustomerContact" ThisKey="CustomerContactID" OtherKey="CustomerContactID" Type="etblCustomerContact" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblPFEDispatch2" Member="etblEmployee2" ThisKey="OwnerEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblPFEDispatch3" Member="etblEmployee3" ThisKey="PFEEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblEmployee_mtblPFEDispatch4" Member="etblEmployee4" ThisKey="TAMEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblPFEDispatchEmployeeIDOwnershipLevel" Member="mtblPFEDispatchEmployeeIDOwnershipLevels">
+    <Type Name="mtblPFEDispatchEmployeeIDOwnershipLevel">
+      <Column Name="ROSSID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OwnershipLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblProblemIncident" Member="mtblProblemIncidents">
+    <Type Name="mtblProblemIncident">
+      <Column Name="ProblemID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IncidentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblIncident_mtblProblemIncident" Member="etblIncident" ThisKey="IncidentID" OtherKey="IncidentID" Type="etblIncident" IsForeignKey="true" />
+      <Association Name="etblProblem_mtblProblemIncident" Member="etblProblem" ThisKey="ProblemID" OtherKey="ProblemID" Type="etblProblem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblRAPIDEngagement" Member="mtblRAPIDEngagements">
+    <Type Name="mtblRAPIDEngagement">
+      <Column Name="ROSSID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EngineerID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RequestTrackingNumber" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EngineerEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScheduledArrivalDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ScheduledArrivalDateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsLast" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblEmployee_mtblRAPIDEngagement" Member="etblEmployee" ThisKey="EngineerEmployeeID" OtherKey="EmployeeID" Type="etblEmployee" IsForeignKey="true" />
+      <Association Name="etblROSS_mtblRAPIDEngagement" Member="etblROSS" ThisKey="ROSSID" OtherKey="ROSSID" Type="etblROSS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mtblTaskProblemIncident" Member="mtblTaskProblemIncidents">
+    <Type Name="mtblTaskProblemIncident">
+      <Column Name="TaskID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProblemID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IncidentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InsertedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedByUserAlias" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="etblIncident_mtblTaskProblemIncident" Member="etblIncident" ThisKey="IncidentID" OtherKey="IncidentID" Type="etblIncident" IsForeignKey="true" />
+      <Association Name="etblProblem_mtblTaskProblemIncident" Member="etblProblem" ThisKey="ProblemID" OtherKey="ProblemID" Type="etblProblem" IsForeignKey="true" />
+      <Association Name="etblTask_mtblTaskProblemIncident" Member="etblTask" ThisKey="TaskID" OtherKey="TaskID" Type="etblTask" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

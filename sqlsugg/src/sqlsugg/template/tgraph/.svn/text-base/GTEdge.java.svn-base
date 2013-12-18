@@ -1,0 +1,21 @@
+package sqlsugg.template;
+
+
+public class GTEdge extends TEdge{
+	public GTEdge () {
+		super(0);
+	}
+	
+	public GTEdge (double s) {
+		super(s);
+	}
+	
+	public TEdge copy () {
+		TEdge e = new MTEdge();
+		return e;
+	}
+	
+	public String toString () {
+		return "group" + super.toString();
+	}
+}
