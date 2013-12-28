@@ -1,1 +1,5 @@
 sqlsugg/bin
+sqlsugg/.settings
+sqlsugg/.project
+sqlsugg/.svn
+sqlsugg/.classpath
